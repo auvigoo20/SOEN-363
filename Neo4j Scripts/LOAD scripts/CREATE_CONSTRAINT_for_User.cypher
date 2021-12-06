@@ -1,0 +1,1 @@
+CREATE CONSTRAINT UniqueUser ON (u:User) ASSERT u.username IS UNIQUE
