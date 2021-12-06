@@ -1,0 +1,1 @@
+CREATE CONSTRAINT UniqueAnime ON (a:Anime) ASSERT a.anime_id IS UNIQUE
