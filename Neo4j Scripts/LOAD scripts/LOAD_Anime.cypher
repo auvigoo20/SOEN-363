@@ -69,9 +69,7 @@ MERGE (a:Anime {anime_id: anime_id})
         a.aired_from_year =aired_from_year
 
 
-RETURN count(a)
-LIMIT 3;
-
+RETURN count(a);
 
 
 
