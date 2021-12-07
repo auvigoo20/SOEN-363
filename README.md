@@ -24,9 +24,9 @@ ERD for the relational model:
 2. Download the dataset [here](https://www.dropbox.com/sh/odgx8qew37st1sb/AAD0-8OxngY6YXAtmUIrlDt5a?dl=0) 
 3. Run the `INSERT` [scripts](https://github.com/auvigoo20/SOEN-363/tree/main/Postgres%20Scripts) to insert the data into the `Anime` and `Users` tables
 4. Since `animelists_cleaned.csv` is too large to be directly imported into pgAdmin, it has been split into three separate [files](https://www.dropbox.com/s/e7zh0w7cuuwoadl/animelists_cleaned_split.zip?dl=0):
-      * `animelists_cleaned_0.csv`
-      * `animelists_cleaned_1.csv`
-      * `animelists_cleaned_2.csv`
+      * `animelists_cleaned_0.csv` (HEADER)
+      * `animelists_cleaned_1.csv` (NO HEADER)
+      * `animelists_cleaned_2.csv` (NO HEADER)
 <br/>Import these three files into the `AnimeList` table separately. Ensure that in the import options on pgAdmin, the escape character is `"`
 
 ## Import the dataset to Neo4j
