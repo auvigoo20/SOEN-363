@@ -42,6 +42,11 @@ Data model for Neo4j:
 <img src="https://github.com/auvigoo20/SOEN-363/blob/main/Diagrams/MyAnimeList_neo4j.png" />
 </p>
 
+Model visualization example:
+<p align="center">
+<img src="https://github.com/auvigoo20/SOEN-363/blob/main/Diagrams/neo4j_visualization.png" />
+</p>
+
 1. In Neo4j, create the indexes for `Anime` and `User` by running the `CREATE CONSTRAINT` [scripts](https://github.com/auvigoo20/SOEN-363/tree/main/Neo4j%20Scripts)
 2. Download the dataset [here](https://www.dropbox.com/sh/odgx8qew37st1sb/AAD0-8OxngY6YXAtmUIrlDt5a?dl=0) 
 3. Import the dataset into the DBMS
