@@ -3,6 +3,12 @@ SOEN-363 Project Phase II
 
 MyAnimeList dataset: https://www.kaggle.com/azathoth42/myanimelist
 
+Team members:
+- Auvigoo Ahmed - 40128901
+- Bicher Chammaa - 40096200
+- Radley Carpio - 40074888
+- Radjabi Siar - 40136258
+
 Data systems:
 - PostgreSQL
 - Neo4j
@@ -50,7 +56,7 @@ dbms.memory.heap.max_size=4G
 dbms.memory.pagecache.size=512m
 ```
 6. The previously split animelists `.csv` files have been manually modified and fixed due to the inability to specify escape characters in Neo4j, which caused importing problems. Use the [modified files](https://www.dropbox.com/s/jhz7c3gauo6vv57/animelists_cleaned_split_neo4j_fixed.zip?dl=0) for importing
-7. Run the `LOAD` [script](https://github.com/auvigoo20/SOEN-363/blob/main/Neo4j%20Scripts/LOAD_HAS_IN_LIST.cypher) to create the `HAS_IN_LIST` relationships between the `Anime` and `Users`. This has to be repeated three times, for each animelists file. Ensure that the directory specified here is correct with the proper path and file name
+7. Run the `LOAD` [script](https://github.com/auvigoo20/SOEN-363/blob/main/Neo4j%20Scripts/DDL/LOAD_HAS_IN_LIST.cypher) to create the `HAS_IN_LIST` relationships between the `Anime` and `Users`. This has to be repeated three times, for each animelists file. Ensure that the directory specified here is correct with the proper path and file name
 ```
 :auto USING PERIODIC COMMIT 100000
 LOAD CSV WITH HEADERS FROM 'file:///animelists_cleaned_split/animelists_cleaned_2.csv' AS row
